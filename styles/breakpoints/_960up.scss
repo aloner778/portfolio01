@@ -1,0 +1,105 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 19px;
+}
+.font-lr {
+  font-size: 23px;
+}
+.font-lg {
+  font-size: 36px;
+}
+.mb-sm {
+  margin-bottom: 40px !important;
+}
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+.flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header {
+  &__nav {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
+
+.swiper-slide {
+  box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+}
+
+.header {
+  &__nav {
+    display: block;
+  }
+}
+
+.service {
+  &__inner {
+    padding: 50px 150px;
+  }
+  &__title {
+    padding: 0;
+
+    &::before {
+      width: 80px;
+      height: 3px;
+      left: -100px;
+      transition: transform 0.3s ease 1.6s;
+      transform-origin: right;
+      transform: translateY(-50%) scaleX(1);
+    }
+  }
+}
+
+.beach {
+  position: relative;
+
+    &::before {
+      content: '';
+      background-image: url(../images/ningyo1.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100%;
+    }
+  }
+
+.view {
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    flex-basis: 25%;
+
+    &:nth-child(even) {
+      padding-top: 200px;
+    }
+  }
+
+  &__btn {
+    margin-top: 100px;
+  }
+}

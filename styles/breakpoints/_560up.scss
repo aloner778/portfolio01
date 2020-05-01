@@ -1,0 +1,65 @@
+/******************************************************************
+
+Stylesheet: 560px以上のタブレットやモニタで適用
+
+******************************************************************/
+.flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.service {
+  &__inner {
+    padding: 50px;
+  }
+
+  &__text,
+  &__image {
+    flex-basis: 47%;
+  }
+
+  &__image {
+    margin: 0;
+  }
+}
+
+.beach {
+
+  &__item {
+    flex-basis: 55%;
+
+    &:nth-child(even) {
+      margin:20px 0 20px 150px;
+    }
+  }
+
+  &__btn {
+    flex-basis: 100%;
+  }
+}
+
+.hotel {
+  &__item {
+    flex-basis: 50%;
+  }
+
+  &__btn {
+    flex-basis: 100%;
+  }
+}
+
+.view {  
+  &__btn {
+    margin-top: 80px;
+  }
+}
+
+.footer {  
+  & .logo {
+    justify-content: flex-start;
+  }
+
+  &__li {
+    margin-right: 30px;
+  }
+}
